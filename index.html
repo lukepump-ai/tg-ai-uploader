@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TG AI Uploader</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #7bb0ff; } }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  @media (prefers-color-scheme: dark) { .sub { color: #9a9a9a; } }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  ul { padding-left: 1.2rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #ddd; font-size: .9rem; color: #666; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #333; color: #9a9a9a; } }
+</style>
+</head>
+<body>
+
+<h1>TG AI Uploader</h1>
+<p class="sub">Pubblicazione automatica delle puntate del telegiornale <strong>TG AI</strong> su YouTube.</p>
+
+<h2>Che cos'è</h2>
+<p>
+  TG AI Uploader è uno strumento a uso personale che carica su YouTube le puntate del
+  notiziario quotidiano <strong>TG AI</strong>, dedicato alle novità sull'intelligenza artificiale.
+  Il video viene prodotto in locale e pubblicato sul canale YouTube del proprietario
+  dell'applicazione, <a href="https://www.youtube.com/@tg-ai-news">@tg-ai-news</a>.
+</p>
+<p>
+  L'applicazione non ha un'interfaccia pubblica e non è destinata a terzi: l'unico utente
+  è il proprietario del canale, che la esegue sul proprio computer.
+</p>
+
+<h2>Accesso richiesto all'account Google</h2>
+<p>Per funzionare, l'applicazione chiede il consenso a due ambiti (<em>scope</em>) dell'API di YouTube:</p>
+<ul>
+  <li>
+    <code>youtube.upload</code> — per caricare il file video della puntata sul canale del proprietario.
+  </li>
+  <li>
+    <code>youtube.readonly</code> — per leggere l'identificativo del canale a cui è collegato il token
+    e fermare il caricamento se non corrisponde a TG AI. Serve solo come controllo di sicurezza,
+    per evitare che un video finisca per errore su un canale diverso.
+  </li>
+</ul>
+<p>
+  Nessun altro dato dell'account Google viene letto, modificato o conservato.
+</p>
+
+<h2>Privacy</h2>
+<p>
+  Le modalità di trattamento dei dati sono descritte nelle
+  <a href="privacy.html">norme sulla privacy</a>.
+</p>
+
+<h2>Revoca dell'accesso</h2>
+<p>
+  L'autorizzazione concessa all'applicazione può essere revocata in qualsiasi momento dalla pagina
+  <a href="https://myaccount.google.com/permissions">Account Google &rsaquo; App di terze parti con accesso all'account</a>.
+</p>
+
+<footer>
+  Contatto: <a href="mailto:lukepump@gmail.com">lukepump@gmail.com</a>
+</footer>
+
+</body>
+</html>
